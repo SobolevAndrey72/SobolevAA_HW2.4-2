@@ -13,6 +13,7 @@
 		A711784127285E4E002AA2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711783F27285E4E002AA2F1 /* Main.storyboard */; };
 		A711784327285E4F002AA2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A711784227285E4F002AA2F1 /* Assets.xcassets */; };
 		A711784627285E4F002AA2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711784427285E4F002AA2F1 /* LaunchScreen.storyboard */; };
+		A7B573A027288264003F3802 /* WelcomeUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5739F27288264003F3802 /* WelcomeUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A711784227285E4F002AA2F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A711784527285E4F002AA2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A711784727285E4F002AA2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B5739F27288264003F3802 /* WelcomeUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeUserViewController.swift; path = SobolevAA_HW2.3/WelcomeUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		A711782D27285E4E002AA2F1 = {
 			isa = PBXGroup;
 			children = (
+				A7B5739F27288264003F3802 /* WelcomeUserViewController.swift */,
 				A711783827285E4E002AA2F1 /* SobolevAA_HW2.3 */,
 				A711783727285E4E002AA2F1 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B573A027288264003F3802 /* WelcomeUserViewController.swift in Sources */,
 				A711783E27285E4E002AA2F1 /* ViewController.swift in Sources */,
 				A711783A27285E4E002AA2F1 /* AppDelegate.swift in Sources */,
 				A711783C27285E4E002AA2F1 /* SceneDelegate.swift in Sources */,
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
