@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+// 
+    let userData = UserData.getUserData()
+    
     @IBOutlet var UserName: UITextField!
     @IBOutlet var Password: UITextField!
     
@@ -37,9 +40,7 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
 
         }
-
     }
-    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -57,12 +58,14 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    
     @IBAction func ShowName(_ sender: Any) {
         // create the alert
         let alert = UIAlertController(title: "Remainder :", message: "Your Name - User .", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
+    
     
     // Метод для скрытия клавиатуры тапом по экрану
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -72,9 +75,7 @@ class ViewController: UIViewController {
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         // print("Debug-Debug-Debug")
-        // guard let settingsVC = segue.source as? WelcomeUserViewController
-        // else { return }
-        UserName.text = "" // settingsVC.userName + "dddd"
+        UserName.text  = ""
         Password.text  = ""
     }
 }

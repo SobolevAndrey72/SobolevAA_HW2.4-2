@@ -13,6 +13,7 @@
 		A711784127285E4E002AA2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711783F27285E4E002AA2F1 /* Main.storyboard */; };
 		A711784327285E4F002AA2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A711784227285E4F002AA2F1 /* Assets.xcassets */; };
 		A711784627285E4F002AA2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711784427285E4F002AA2F1 /* LaunchScreen.storyboard */; };
+		A778E946272DDF1600424E91 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778E945272DDF1600424E91 /* UserDataModel.swift */; };
 		A7B573A027288264003F3802 /* WelcomeUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5739F27288264003F3802 /* WelcomeUserViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		A711784227285E4F002AA2F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A711784527285E4F002AA2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A711784727285E4F002AA2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A778E945272DDF1600424E91 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		A7B5739F27288264003F3802 /* WelcomeUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeUserViewController.swift; path = SobolevAA_HW2.3/WelcomeUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,10 +66,19 @@
 				A711783D27285E4E002AA2F1 /* ViewController.swift */,
 				A711783F27285E4E002AA2F1 /* Main.storyboard */,
 				A711784227285E4F002AA2F1 /* Assets.xcassets */,
-				A711784427285E4F002AA2F1 /* LaunchScreen.storyboard */,
+				A778E944272DDECC00424E91 /* Models */,
 				A711784727285E4F002AA2F1 /* Info.plist */,
+				A711784427285E4F002AA2F1 /* LaunchScreen.storyboard */,
 			);
 			path = SobolevAA_HW2.3;
+			sourceTree = "<group>";
+		};
+		A778E944272DDECC00424E91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A778E945272DDF1600424E91 /* UserDataModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			files = (
 				A7B573A027288264003F3802 /* WelcomeUserViewController.swift in Sources */,
 				A711783E27285E4E002AA2F1 /* ViewController.swift in Sources */,
+				A778E946272DDF1600424E91 /* UserDataModel.swift in Sources */,
 				A711783A27285E4E002AA2F1 /* AppDelegate.swift in Sources */,
 				A711783C27285E4E002AA2F1 /* SceneDelegate.swift in Sources */,
 			);
@@ -299,6 +311,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AndreyKo.SobolevAA-HW2-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "AndreyKo.SobolevAA-HW2-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +340,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AndreyKo.SobolevAA-HW2-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "AndreyKo.SobolevAA-HW2-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
