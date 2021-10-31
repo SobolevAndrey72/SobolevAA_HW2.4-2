@@ -32,9 +32,9 @@ enum Animal: Character {
 }
 
 extension UserData {
-    static func getUserData() -> [UserData] {
-        return [
-        UserData(login: "User",
+    static func getUserData() -> UserData {
+        return
+        (UserData(login: "User",
                  password: "Password",
                  userName: "Андрей",
                  userFamily: "Соболев",
@@ -44,19 +44,8 @@ extension UserData {
                           text: "Люблю кататься на велосипеде")
                          ],
                  animal: .seaPig
-                ),
-        UserData(login: "User",
-                 password: "Password",
-                 userName: "Иван",
-                 userFamily: "Иванов",
-                 birthDay: "01.01.1999",
-                 hobbys: [
-                    Hobby(zagolovok: "Бег.",
-                          text: "Бег по утрам")
-                         ],
-                 animal: .cat
-                ),
+                )
+        )
         
-        ]
     }
 }

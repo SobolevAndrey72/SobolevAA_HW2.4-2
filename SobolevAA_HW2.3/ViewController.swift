@@ -9,9 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-// 
-    let userData = UserData.getUserData()
-    
+      
     @IBOutlet var UserName: UITextField!
     @IBOutlet var Password: UITextField!
     
@@ -23,10 +21,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func TouchLogin(_ sender: Any) {
-//        if UserName.text == "User" && Password.text == "Password" {
-//
-//        }
-//        else { return }
     }
     
     @IBAction func ValidNamePassword(_ sender: Any) {
@@ -42,13 +36,35 @@ class ViewController: UIViewController {
         }
     }
     
+    // Создаем модель
+    let userData = UserData.getUserData()
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let settingsVC = segue.destination as? WelcomeUserViewController
-        else { return }
+    
+            let tabBarController = segue.destination as! UITabBarController
+            let settingVC = tabBarController.viewControllers?.first as! WelcomeUserViewController
+            let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
+            let aboutUserVC = navigationVC.topViewController as! AboutUserViewController
         // посредники
-        settingsVC.userName = UserName.text
-    }
+        // userData.login == UserName.text
+         settingVC.userData = userData
+         aboutUserVC.userData = userData
+     }
+
+//    let tabBarController = segue.destination as! UITabBarController
+//    let welcomeVC = tabBarController.viewControllers?.first as! WelcomeViewController
+//    let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
+//    let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
+//    welcomeVC.user = user
+//    aboutUserVC.user = user
+    
+    
+//        guard let settingsVC = segue.destination as? WelcomeUserViewController
+//        else { return }
+//        // посредники
+//        settingsVC.userName = UserName.text
+
     
     
     @IBAction func ShowPassword(_ sender: Any) {

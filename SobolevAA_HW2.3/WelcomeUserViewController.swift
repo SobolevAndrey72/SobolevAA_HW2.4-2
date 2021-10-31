@@ -11,13 +11,14 @@ class WelcomeUserViewController: UIViewController {
 
     @IBOutlet var Welcome: UILabel!
     
-    var userName: String!
-    
+ //   var userName: String!
+    var userData:  UserData!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Момент истины
-        Welcome.text = userName + "!"
+        // print(userData.userName)
+        Welcome.text = userData.userName + " " + userData.userFamily  + "!"
     }
 
 }
