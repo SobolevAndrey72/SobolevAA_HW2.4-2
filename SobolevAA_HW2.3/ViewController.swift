@@ -42,30 +42,28 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
-            let tabBarController = segue.destination as! UITabBarController
-            let settingVC = tabBarController.viewControllers?.first as! WelcomeUserViewController
-            let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
-            let aboutUserVC = navigationVC.topViewController as! AboutUserViewController
+        guard let tabBarController = segue.destination as? UITabBarController
+        else { return }
+        
+        guard let settingVC = tabBarController.viewControllers?.first as? WelcomeUserViewController
+        else { return }
+        
+        guard let navigationVC = tabBarController.viewControllers?.last as? UINavigationController
+        else { return }
+        
+        guard let aboutUserVC = navigationVC.topViewController as? AboutUserViewController
+        else { return }
+
         // посредники
         // userData.login == UserName.text
          settingVC.userData = userData
          aboutUserVC.userData = userData
      }
 
-//    let tabBarController = segue.destination as! UITabBarController
-//    let welcomeVC = tabBarController.viewControllers?.first as! WelcomeViewController
-//    let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
-//    let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
-//    welcomeVC.user = user
-//    aboutUserVC.user = user
-    
+
     
 //        guard let settingsVC = segue.destination as? WelcomeUserViewController
 //        else { return }
-//        // посредники
-//        settingsVC.userName = UserName.text
-
-    
     
     @IBAction func ShowPassword(_ sender: Any) {
         // create the alert
